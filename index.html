@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      background-color: rgb(250, 247, 233);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    "
+  >
+    <script>
+      document.addEventListener("click", () => {
+        document.querySelectorAll("button").value = "";
+      });
+    </script>
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      button {
+        background-color: #196bca;
+        color: #fff;
+        font-family: Trebuchet MS;
+        font-size: 18px;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: none;
+        padding: 14px 15px;
+        border: 0px solid #000;
+        border-radius: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        margin: 0.8rem;
+      }
+      input {
+        width: 10rem;
+        padding: 0.7rem;
+        margin: 1rem;
+        border: solid rgba(151, 149, 149, 0.54) 0.75px;
+      }
+    </style>
+    <h1 style="text-align: center">Calculadora</h1>
+    <form
+      method="post"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50rem;
+        margin: 0 auto;
+      "
+    >
+      <input type="number" name="num1" placeholder="Digite um número" />
+      <input type="number" name="num2" placeholder="Digite um número" />
+      <button type="submit" value="add" name="operation">Adicionar</button>
+      <button type="submit" value="mult" name="operation">Multiplicar</button>
+      <button type="submit" value="subt" name="operation">Subtrair</button>
+      <button type="submit" value="divide" name="operation">Dividir</button>
+    </form>
+  </body>
+</html>
