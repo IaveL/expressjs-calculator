@@ -8,6 +8,10 @@ Uma simples calculadora, que permite realizar uma das 4 operações básicas ent
 
 Utilizar `body-parser` para conseguir acessar os dados que foram enviados no form, e realizar a lógica de acordo com a operação que for escolhida.
 
+## Funcionamento
+Com intuito de impulsionar o aprendizado, é realizado um `get` (acessar a rota index), onde existe dois `input`, solicitando os dois números a serem operados.
+Ao clicar na operação desejada, é realizado um `post` com as informações nos inputs, e realiza operação solicitada.
+
 ## Tecnologia
 
 - Node.js
@@ -15,3 +19,4 @@ Utilizar `body-parser` para conseguir acessar os dados que foram enviados no for
 - HTML5
 - CSS3
 - Javascript
+
